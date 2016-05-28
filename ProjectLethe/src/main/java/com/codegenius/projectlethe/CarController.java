@@ -29,14 +29,14 @@ public class CarController{
 
 
 
-	public void turnRight(){
+	public void turnLeft(){
 		frontLeft.forward();
 		backLeft.forward();
 		frontRight.backward();
 		backRight.backward();	
 	}
 
-	public void turnLeft(){
+	public void turnRight(){
 		frontLeft.backward();
 		backLeft.backward();
 		frontRight.forward();
