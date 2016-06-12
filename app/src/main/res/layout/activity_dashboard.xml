@@ -9,8 +9,106 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.codegenius.letherc.DashboardActivity">
 
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        >
+
+        <Button
+            android:id="@+id/forward_Btn"
+            android:text="@string/up_arrow"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"/>
+        <Button
+            android:id="@+id/left_Btn"
+            android:text="@string/left_arrow"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"
+            />
+        <Button
+            android:id="@+id/back_Btn"
+            android:text="@string/down_arrow"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"
+            />
+        <Button
+            android:id="@+id/right_Btn"
+            android:text="@string/right_arrow"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"/>
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <Button
+            android:id="@+id/camera_up_btn"
+            android:text="@string/up_arrow"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"/>
+        <Button
+            android:id="@+id/camera_down_btn"
+            android:text="@string/left_arrow"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"
+            />
+        <Button
+            android:id="@+id/camera_right_btn"
+            android:text="@string/down_arrow"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"
+            />
+        <Button
+            android:id="@+id/camera_left_btn"
+            android:text="@string/right_arrow"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/car_control_buttons_size"
+            android:layout_height="@dimen/car_control_buttons_size"/>
+
+        <Button android:id="@+id/camera_default_btn"
+            android:text="O"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@android:color/transparent"
+            android:layout_height="@dimen/car_control_buttons_size"
+            android:layout_width="@dimen/car_control_buttons_size"/>
+
+    </GridLayout>
+
 </RelativeLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LetheRC</string>
+    <string name="right_arrow">▶</string>
+    <string name="left_arrow">◀</string>
+    <string name="down_arrow">▼</string>
+    <string name="up_arrow">▲</string>
 </resources>
