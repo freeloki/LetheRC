@@ -49,7 +49,7 @@ public class CameraControllerClient extends Thread implements LetheFinderListene
 
         public void writeMsg(String msg){
 
-            if(clientSocket.isConnected()){
+            if(clientSocket != null && clientSocket.isConnected()){
 
                 if(!clientSocket.isClosed()) {
 
@@ -67,7 +67,7 @@ public class CameraControllerClient extends Thread implements LetheFinderListene
         }
 
         public boolean isConnected(){
-            return clientSocket.isConnected();
+            return clientSocket != null && clientSocket.isConnected();
         }
 
         public Socket getSocket(){
